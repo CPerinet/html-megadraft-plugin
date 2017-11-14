@@ -9,18 +9,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {MegadraftEditor} from "megadraft";
 
-import plugin from "html-megadraft-plugin";
+import htmlMegadraftPlugin from "html-megadraft-plugin";
 
 class Example extends React.Component {
   render(){
     return (
-      <MegadraftEditor plugins={[plugin]} />
+      <MegadraftEditor plugins={[htmlMegadraftPlugin]} />
     );
   }
 }
 
 ReactDOM.render(<Example />, document.getElementById("container"));
 ```
+
+You can use video / normal option use or not the Fluid Width Video css-trick.
+
+![Include youtube iframe](./iframe.jpeg "Include youtube iframe")
+
+
+## ⚠️ OUTPUT RAW HTML ON YOUR WEEBSITE IS DANGEROUS ⚠️
+
+Users can include scripts or anthing else dangerous. You should either check saved date or only allow admins to use it.
+
 
 ## Contributing
 
